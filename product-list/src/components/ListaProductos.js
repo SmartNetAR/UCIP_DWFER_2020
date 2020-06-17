@@ -6,6 +6,10 @@ class ListaProductos extends Component {
         super(props);
     }
 
+    editar = ( producto ) =>  {
+        this.props.onClick( producto );
+    }
+
     render() {
         return (
             <div>
@@ -14,7 +18,20 @@ class ListaProductos extends Component {
                 </h2>
 
                 <ul>
-                    { this.props.productos.map( producto => <li key={producto.id}> { producto.nombre} </li> ) }
+                    { this.props.productos.map( producto => 
+                        <li
+                            key={producto.id}>
+                            { producto.nombre} 
+                            <button
+                                type="button" 
+                                className="btn btn-primary"
+                                onClick={ () => this.editar( producto ) }
+                                
+                                // onClick={ () => this.props.onClick(producto) }
+                            >
+                                Editar
+                            </button>
+                        </li> ) }
                 </ul>
 
             </div>
