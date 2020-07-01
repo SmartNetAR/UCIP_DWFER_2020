@@ -1,0 +1,3 @@
+[submodule "hoteles"]
+	path = hoteles
+	url = https://github.com/SmartNetAR/hoteles
