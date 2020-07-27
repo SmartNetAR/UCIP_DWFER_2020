@@ -1,3 +1,6 @@
 [submodule "hoteles"]
 	path = hoteles
 	url = https://github.com/SmartNetAR/hoteles
+[submodule "react-node-redis-auth"]
+	path = react-node-redis-auth
+	url = https://github.com/SmartNetAR/react-node-redis-auth.git
